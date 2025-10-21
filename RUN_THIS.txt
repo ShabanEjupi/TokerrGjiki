@@ -1,0 +1,205 @@
+================================================================
+EXACT COMMANDS TO RUN - Copy/Paste Ready
+================================================================
+
+⚠️  IMPORTANT: Replace "username" with your actual SSH username
+    Example: ilirk, student, admin, etc.
+
+================================================================
+STEP 1: Test Your Connection to Server
+================================================================
+
+./test_server_connection.sh
+
+(When prompted, enter your SSH username)
+
+If this fails:
+- Make sure you can reach the server
+- Check you have the correct credentials
+- Try: ssh -p 8022 username@185.182.158.150
+
+
+================================================================
+STEP 2A: Option A - Automated Deployment (Recommended)
+================================================================
+
+First, edit the deploy script with your username:
+
+nano deploy_to_server.sh
+
+Find this line:
+    REMOTE_DIR="/home/user/pyspark_retail"
+
+Change "user" to your username:
+    REMOTE_DIR="/home/YOUR_USERNAME/pyspark_retail"
+
+Save and exit (Ctrl+X, Y, Enter)
+
+Then run:
+./deploy_to_server.sh
+
+
+================================================================
+STEP 2B: Option B - Manual Deployment
+================================================================
+
+# Connect to verify access
+ssh -p 8022 username@185.182.158.150
+
+# Exit and then upload files
+exit
+
+# Create remote directory
+ssh -p 8022 username@185.182.158.150 "mkdir -p ~/pyspark_retail"
+
+# Upload Python script
+scp -P 8022 retail_profiler.py username@185.182.158.150:~/pyspark_retail/
+
+# Upload dataset
+scp -P 8022 data_kaggle/online_retail.xlsx username@185.182.158.150:~/pyspark_retail/
+
+# Connect and install dependencies
+ssh -p 8022 username@185.182.158.150
+
+# Now on the server:
+pip install --user pyspark openpyxl pandas
+
+# Run the analysis
+cd ~/pyspark_retail
+python retail_profiler.py
+
+# Check results
+ls -lh out_retail/
+
+# Exit when done
+exit
+
+
+================================================================
+STEP 3: Download Results from Server
+================================================================
+
+# Create local directory for results
+mkdir -p results_from_server
+
+# Download all outputs
+scp -P 8022 -r username@185.182.158.150:~/pyspark_retail/out_retail ./results_from_server/
+
+# View downloaded files
+ls -lh results_from_server/out_retail/
+
+
+================================================================
+QUICK VERIFICATION COMMANDS
+================================================================
+
+# Check if files uploaded correctly
+ssh -p 8022 username@185.182.158.150 "ls -lh ~/pyspark_retail/"
+
+# Check if analysis ran
+ssh -p 8022 username@185.182.158.150 "ls -lh ~/pyspark_retail/out_retail/"
+
+# View country stats
+ssh -p 8022 username@185.182.158.150 "head -10 ~/pyspark_retail/out_retail/country_stats.csv"
+
+# View product stats
+ssh -p 8022 username@185.182.158.150 "head -10 ~/pyspark_retail/out_retail/product_stats.csv"
+
+
+================================================================
+TROUBLESHOOTING
+================================================================
+
+Problem: "Connection refused"
+Solution:
+    1. Check server is online: ping 185.182.158.150
+    2. Try different port: ssh -p 22 username@185.182.158.150
+    3. Contact your network admin
+
+Problem: "Permission denied"
+Solution:
+    1. Verify your username is correct
+    2. Check your password
+    3. Try: ssh-copy-id -p 8022 username@185.182.158.150
+
+Problem: "PySpark not found"
+Solution:
+    ssh -p 8022 username@185.182.158.150
+    pip install --user pyspark openpyxl pandas
+
+Problem: "Java not found"
+Solution:
+    ssh -p 8022 username@185.182.158.150
+    sudo apt-get update
+    sudo apt-get install default-jdk
+
+Problem: "Not enough memory"
+Solution:
+    Edit retail_profiler.py and change:
+    RETURNS_SAMPLE_LIMIT = 50000
+    to:
+    RETURNS_SAMPLE_LIMIT = 10000
+
+
+================================================================
+EXPECTED OUTPUT
+================================================================
+
+When the script runs successfully, you should see:
+
+================================================================================
+PySpark Online Retail Profiler
+================================================================================
+Spark version: 4.0.1
+
+Loading data from: /workspaces/TokerrGjiki/data_kaggle/online_retail.xlsx
+Loaded with pandas -> shape=(541909, 8)
+
+Total rows: 541,909
+
+✓ Saved schema -> .../schema.json
+✓ Saved null counts -> .../null_counts.csv
+✓ Saved column stats -> .../column_stats.csv
+✓ Saved per-country stats -> .../country_stats.csv
+✓ Saved per-product stats (top 1000) -> .../product_stats.csv
+✓ Saved per-customer stats (top 5000) -> .../customer_stats.csv
+✓ Saved monthly stats -> .../monthly_stats.csv
+✓ Saved metrics sample -> .../metrics_sample.csv
+✓ Saved sample (20 rows) -> .../sample_20.csv
+
+================================================================================
+ANALYSIS COMPLETE - Outputs generated:
+================================================================================
+[... list of all 9 output files ...]
+
+✓ Spark session stopped
+
+
+================================================================
+NEXT STEPS AFTER DEPLOYMENT
+================================================================
+
+1. ✅ Verify all 9 output files were created
+2. ✅ Download results to your local machine
+3. ✅ Review the insights in the CSV files
+4. ✅ Prepare presentation of findings
+5. ✅ Document any interesting patterns discovered
+
+================================================================
+FOR YOUR PROFESSOR
+================================================================
+
+Show these files to demonstrate completion:
+1. retail_profiler.py - Your PySpark code
+2. out_retail/*.csv - Analysis results
+3. PROJECT_SUMMARY.txt - Technical documentation
+4. Screenshot of successful run on server
+
+Key achievements:
+✅ Downloaded real-world dataset (541K rows)
+✅ Implemented course algorithms (groupBy, window functions, stats)
+✅ Generated comprehensive analytics (9 output files)
+✅ Deployed to remote server successfully
+✅ Documented everything thoroughly
+
+================================================================

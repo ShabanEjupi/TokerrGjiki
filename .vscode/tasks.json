@@ -1,0 +1,146 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "🚀 EKZEKUTO PROJEKTIN E PLOTË",
+            "type": "shell",
+            "command": "${workspaceFolder}/EKZEKUTO.bat",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "dedicated",
+                "showReuseMessage": false,
+                "clear": true
+            }
+        },
+        {
+            "label": "📊 Gjenero Dataset-in Financiar",
+            "type": "shell",
+            "command": "python",
+            "args": [
+                "${workspaceFolder}/gjenerues_dataset_financiar.py"
+            ],
+            "problemMatcher": [],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "dedicated"
+            }
+        },
+        {
+            "label": "🔬 Ekzekuto Analizën PySpark",
+            "type": "shell",
+            "command": "python",
+            "args": [
+                "${workspaceFolder}/analiza_financiare_advanced.py"
+            ],
+            "problemMatcher": [],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "dedicated"
+            }
+        },
+        {
+            "label": "📽️ Gjenero PowerPoint Prezantimin",
+            "type": "shell",
+            "command": "python",
+            "args": [
+                "${workspaceFolder}/gjenerues_powerpoint.py"
+            ],
+            "problemMatcher": [],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "dedicated"
+            }
+        },
+        {
+            "label": "📦 Instalo të gjitha librariitet",
+            "type": "shell",
+            "command": "python",
+            "args": [
+                "-m",
+                "pip",
+                "install",
+                "pyspark",
+                "pandas",
+                "matplotlib",
+                "seaborn",
+                "numpy",
+                "openpyxl",
+                "python-pptx",
+                "Pillow",
+                "plotly"
+            ],
+            "problemMatcher": [],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "dedicated"
+            }
+        },
+        {
+            "label": "🗑️ Pastro të gjitha rezultatet",
+            "type": "shell",
+            "command": "powershell",
+            "args": [
+                "-Command",
+                "Remove-Item -Path '${workspaceFolder}/rezultatet_doktorature' -Recurse -Force -ErrorAction SilentlyContinue; Remove-Item -Path '${workspaceFolder}/vizualizime_doktorature' -Recurse -Force -ErrorAction SilentlyContinue; Remove-Item -Path '${workspaceFolder}/prezantimi_powerpoint' -Recurse -Force -ErrorAction SilentlyContinue; Write-Host 'Të gjitha rezultatet u pastruan!' -ForegroundColor Green"
+            ],
+            "problemMatcher": [],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "dedicated"
+            }
+        },
+        {
+            "label": "📂 Hap Rezultatet (CSV)",
+            "type": "shell",
+            "command": "explorer",
+            "args": [
+                "${workspaceFolder}\\rezultatet_doktorature"
+            ],
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "never"
+            }
+        },
+        {
+            "label": "🖼️ Hap Vizualizimet (PNG)",
+            "type": "shell",
+            "command": "explorer",
+            "args": [
+                "${workspaceFolder}\\vizualizime_doktorature"
+            ],
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "never"
+            }
+        },
+        {
+            "label": "📽️ Hap PowerPoint Prezantimin",
+            "type": "shell",
+            "command": "explorer",
+            "args": [
+                "${workspaceFolder}\\prezantimi_powerpoint"
+            ],
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "never"
+            }
+        }
+    ]
+}

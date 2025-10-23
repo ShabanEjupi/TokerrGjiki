@@ -1,296 +1,254 @@
-================================================================
-PROJECT SUMMARY - PySpark Retail Analytics
-================================================================
-Date: October 21, 2025
-Student: [Your Name]
-Professor: [Professor's Name]
+================================================================================
+PROJEKTI DOKTORATURË - ANALIZA E AVANCUAR FINANCIARE ME PYSPARK
+================================================================================
 
-================================================================
-1. DATASET SELECTED
-================================================================
-✓ Online Retail Dataset (UCI Machine Learning Repository)
-✓ Source: https://archive.ics.uci.edu/ml/datasets/Online+Retail
-✓ Size: 541,909 transactions (22.6 MB)
-✓ Timeframe: 2010-2011 (13 months)
-✓ Coverage: 38 countries, 4,000+ customers, 4,000+ products
+NIVELI: Doktoraturë (PhD)
+UNIVERSITETI: Universiteti i Prishtinës, Republika e Kosovës
+FUSHË: Big Data Analytics, Financial Computing, Time Series Analysis
 
-Columns:
-- InvoiceNo: Transaction identifier
-- StockCode: Product code
-- Description: Product name
-- Quantity: Number of items (negative = returns)
-- InvoiceDate: Transaction timestamp
-- UnitPrice: Price per unit (GBP)
-- CustomerID: Customer identifier
-- Country: Customer location
+================================================================================
+ALGORITMET E IMPLEMENTUARA (SI MËSOI PROFESORI)
+================================================================================
 
-================================================================
-2. ALGORITHMS IMPLEMENTED (From Course Sessions 1-3)
-================================================================
+✓ 1. NULL COUNTING - Analiza e plotësisë së të dhënave
+✓ 2. DATA PROFILING - Vlerësimi gjithëpërfshirës (mean, stddev, variance, skewness, kurtosis)
+✓ 3. PERCENTILE_APPROX - Llogaritja e kuantileve (P25, P50, P75, P95, P99)
+✓ 4. RETURNS CALCULATION - Rendimentet ditore, javore, mujore
+✓ 5. LAG - Operacione të serive kohore (1, 5, 10, 20 ditë)
+✓ 6. MOVING AVERAGE - Mesataret lëvizëse (7-ditore, 30-ditore, 90-ditore)
+✓ 7. STDDEV_SAMP - Devijimi standard i mostrave
+✓ 8. VOLATILITY COMPUTATION - Volatiliteti historik dhe rolling
+✓ 9. GROUPBY AGGREGATION - Agregimet MapReduce (mujore, vjetore)
+✓ 10. WINDOW FUNCTIONS - Rank, dense_rank, percent_rank, ntile
 
-✓ DATA LOADING & SCHEMA INFERENCE
-  - Pandas integration for Excel files
-  - Spark DataFrame creation
-  - Type casting and validation
+================================================================================
+STRUKTURA E PROJEKTIT
+================================================================================
 
-✓ AGGREGATIONS & GROUPING
-  - Multi-dimensional groupBy operations
-  - Country-level aggregations
-  - Product-level aggregations
-  - Customer-level aggregations
-  - Time-series monthly aggregations
+analiza_financiare_advanced.py  → Implementimi kryesor (650+ rreshta)
+generate_dataset.py             → Gjenerues i dataset-it financiar
+download_financial_data.py      → Shkarkimi nga Yahoo Finance
+README.md                       → Dokumentimi në anglisht
+README_SHQIP.md                 → Dokumentimi në shqip (i detajuar)
+UDHEZIME_EKZEKUTIM.md          → Udhëzime hap-pas-hapi në shqip
 
-✓ STATISTICAL FUNCTIONS
-  - Mean, median, standard deviation
-  - Quartiles (Q1, Q3) and IQR
-  - Percentile approximation
-  - Count distinct operations
+data_kaggle/
+  └── financial_data.csv        → Dataset financiar (S&P 500 style)
 
-✓ WINDOW FUNCTIONS (Advanced)
-  - Partitioning by CustomerID
-  - Row numbering for transaction sequences
-  - Cumulative sums (customer lifetime value)
-  - Running totals with rowsBetween()
+rezultatet_doktorature/         → Outputet CSV
+  ├── 01_null_counting.csv
+  ├── 02_data_profiling.csv
+  ├── 03_monthly_aggregation.csv
+  ├── 04_yearly_aggregation.csv
+  └── 05_dataset_final_i_plote.csv
 
-✓ DATA TRANSFORMATIONS
-  - Null handling and empty string treatment
-  - Calculated columns (TotalPrice, IsReturn)
-  - Date/time parsing and formatting
-  - Conditional logic with when/otherwise
+vizualizime_doktorature/        → Figurat profesionale
+  ├── 01_time_series_analysis.png
+  ├── 02_volatility_analysis.png
+  ├── 03_volume_analysis.png
+  └── 04_statistical_distribution.png
 
-✓ EXPORT & PERSISTENCE
-  - Multiple CSV outputs
-  - JSON schema export
-  - Pandas interoperability
+================================================================================
+SI TË EKZEKUTONI PROJEKTIN
+================================================================================
 
-================================================================
-3. BUSINESS INSIGHTS GENERATED
-================================================================
+HAPI 1: Instalimi i Dependency-ve
+----------------------------------
+python -m pip install pyspark pandas matplotlib seaborn numpy openpyxl
 
-✓ Country Analysis
-  - Revenue by country
-  - Return rates by geography
-  - Customer density per country
-  - Product diversity per market
+HAPI 2: Gjenerimi i Dataset-it
+-------------------------------
+python generate_dataset.py
 
-✓ Product Analysis
-  - Top 1000 products by revenue
-  - Sales volume metrics
-  - Product reach (countries sold)
-  - Customer base per product
+HAPI 3: Ekzekutimi i Analizës
+------------------------------
+python analiza_financiare_advanced.py
 
-✓ Customer Analysis
-  - Top 5000 customers by spending
-  - Customer lifetime value (CLV)
-  - Purchase frequency
-  - First/last purchase dates
-  - Return behavior
+================================================================================
+KARAKTERISTIKAT KRYESORE
+================================================================================
 
-✓ Time-Series Analysis
-  - Monthly revenue trends
-  - Seasonal patterns
-  - Customer acquisition over time
-  - Product mix evolution
+✓ Niveli Doktoral - Algoritme të sofistikuara dhe analiza e thellë
+✓ PySpark Big Data - Përpunim i distribuuar për miliona rreshta
+✓ Time Series Analysis - Lag, moving averages, trend detection
+✓ Financial Mathematics - Returns, volatility, risk metrics
+✓ MapReduce Paradigm - GroupBy aggregations dhe window functions
+✓ Statistical Computing - Descriptive & inferential statistics
+✓ Professional Visualizations - 4 figura në cilësi të lartë
+✓ Dokumentim i Plotë - Në shqip dhe anglisht
+✓ Production-Ready Code - Clean, commented, maintainable
 
-================================================================
-4. OUTPUT FILES (9 files)
-================================================================
+================================================================================
+DATASET-I FINANCIAR
+================================================================================
 
-1. schema.json (3 KB)
-   - Complete data structure definition
-   
-2. null_counts.csv (1 KB)
-   - Missing value analysis per column
-   
-3. column_stats.csv (2 KB)
-   - Min, max, mean, median, quartiles, IQR
-   - For all numeric columns
-   
-4. country_stats.csv (3 KB)
-   - 38 countries analyzed
-   - UK leads with £8.2M revenue (91% of total)
-   - Return rates: 1-6% across countries
-   
-5. product_stats.csv (150 KB)
-   - Top 1000 products by revenue
-   - DOTCOM POSTAGE leads (£206K)
-   - REGENCY CAKESTAND 3 TIER (£174K, 2019 transactions)
-   
-6. customer_stats.csv (450 KB)
-   - Top 5000 customers
-   - Lifetime value calculations
-   - Purchase patterns
-   
-7. monthly_stats.csv (2 KB)
-   - 13 months of data
-   - November 2011: Peak revenue (£1.1M)
-   
-8. metrics_sample.csv (8 MB)
-   - 50,000 transactions with calculated fields
-   - Customer transaction numbering
-   - Cumulative spending
-   
-9. sample_20.csv (3 KB)
-   - Quick data preview
+Format: CSV (Date, Open, High, Low, Close, Volume)
+Periudha: 2015-01-01 deri 2024-10-22
+Rreshta: ~2,470 ditë tregtare
+Modeli: Geometric Brownian Motion (realist)
+Karakteristikat:
+  - Trend pozitiv (~8% vjetor)
+  - Volatilitet realist (~25% vjetor)
+  - Market crashes dhe bull runs
+  - Volume correlation me volatilitet
 
-TOTAL SIZE: ~8.6 MB of analytics outputs
+================================================================================
+REZULTATET (OUTPUTS)
+================================================================================
 
-================================================================
-5. KEY FINDINGS FROM LOCAL RUN
-================================================================
+CSV FILES (5 files):
+--------------------
+1. Null Counting - Analiza e vlerave që mungojnë
+2. Data Profiling - Statistika të detajuara për çdo kolonë
+3. Monthly Aggregation - Agregime mujore (çmim, volume, volatilitet)
+4. Yearly Aggregation - Agregime vjetore
+5. Dataset Final - Dataset-i i plotë me të gjitha feature-et e llogaritura
 
-✓ Processing Time: ~2 minutes
-✓ Total Transactions: 541,909
-✓ Date Range: Dec 2010 - Dec 2011
-✓ Top Country: United Kingdom (91.4% of revenue)
-✓ Total Revenue: ~£9.0M
-✓ Average Transaction: £18.50
-✓ Return Rate: 1.86% overall
-✓ Top Product Revenue: £206K (DOTCOM POSTAGE)
-✓ Unique Customers: 4,372
-✓ Unique Products: 4,070
+VISUALIZATION FILES (4 PNG files):
+----------------------------------
+1. Time Series Analysis - Çmimet + MA (7d, 30d, 90d) + Distribution of Returns
+2. Volatility Analysis - Rolling Volatility + Correlation Matrix
+3. Volume Analysis - Bar chart i volumit të tregtimit
+4. Statistical Distribution - Box plots për çmime dhe rendimente
 
-================================================================
-6. SERVER DEPLOYMENT PREPARATION
-================================================================
+================================================================================
+ALGORITMET NË DETAJE
+================================================================================
 
-Target Server: 185.182.158.150:8022
-Internal Mapping: 185.182.158.150:443 <-> 10.0.0.4:443
+1. NULL COUNTING
+   - Filter: col.isNull() | isnan(col)
+   - Completeness percentage: 100 - (nulls / total) * 100
 
-✓ Created deployment scripts:
-  1. deploy_to_server.sh - Automated deployment
-  2. connect_to_server.sh - Manual connection
-  3. test_server_connection.sh - Environment validation
+2. DATA PROFILING
+   - Min, Max, Mean, StdDev, Variance
+   - Skewness (asimetria), Kurtosis (kuroziteti)
 
-✓ Documentation created:
-  1. README.md - Complete project documentation
-  2. SERVER_COMMANDS.txt - Quick reference guide
-  3. PROJECT_SUMMARY.txt - This file
+3. PERCENTILE_APPROX
+   - P25 (Quartile 1), P50 (Median), P75 (Quartile 3)
+   - P95, P99 për vlera ekstreme
 
-================================================================
-7. DEPLOYMENT INSTRUCTIONS
-================================================================
+4. RETURNS CALCULATION
+   - Daily: (Price_t - Price_t-1) / Price_t-1 * 100
+   - Weekly: 7-day return using lag(7)
+   - Monthly: 30-day return using lag(30)
 
-STEP 1: Test Connection
-------------------------
-./test_server_connection.sh
-(Enter your username when prompted)
+5. LAG OPERATIONS
+   - lag(1): Yesterday's price
+   - lag(5): 1-week ago price
+   - lag(10): 2-weeks ago
+   - lag(20): 1-month ago (trading days)
 
-STEP 2: Deploy to Server
--------------------------
-./deploy_to_server.sh
-(Or follow manual steps in SERVER_COMMANDS.txt)
+6. MOVING AVERAGES
+   - Window: rowsBetween(-N+1, 0)
+   - MA_7d: 7-day simple moving average
+   - MA_30d: 30-day SMA
+   - MA_90d: 90-day SMA (long-term trend)
 
-STEP 3: Verify Results
------------------------
-ssh -p 8022 username@185.182.158.150
-cd ~/pyspark_retail/out_retail
-ls -lh
+7. VOLATILITY COMPUTATION
+   - Historical: stddev_samp(Daily_Returns)
+   - Annualized: Daily_Vol * sqrt(252)
+   - Rolling: 30-day rolling standard deviation
 
-STEP 4: Download Results
--------------------------
-scp -P 8022 -r username@185.182.158.150:~/pyspark_retail/out_retail ./results_from_server/
+8. GROUPBY AGGREGATION
+   - Group by Year, Month
+   - Aggregate: avg, min, max, sum, stddev_samp
+   - MapReduce pattern për distributed computing
 
-================================================================
-8. TECHNICAL SPECIFICATIONS
-================================================================
+9. WINDOW FUNCTIONS
+   - rank(): Standard ranking
+   - dense_rank(): Ranking pa zbrazëtira
+   - percent_rank(): Percentile ranking
+   - ntile(4): Split në quartiles
 
-✓ PySpark Version: 4.0.1
-✓ Python Version: 3.12
-✓ Dependencies: pyspark, openpyxl, pandas
-✓ No Hadoop/winutils required
-✓ Cross-platform compatible (Windows/Linux)
-✓ Memory-efficient processing
-✓ In-memory catalog (no Hive)
+10. STDDEV_SAMP
+    - Sample standard deviation (Bessel's correction)
+    - Used in volatility calculations
+    - Formula: sqrt(sum((x - mean)^2) / (n-1))
 
-Performance Characteristics:
-- Dataset: 541K rows × 8 columns
-- Processing: ~2 minutes on local machine
-- Memory: <2 GB peak usage
-- Outputs: 9 files, 8.6 MB total
+================================================================================
+KONTRIBUTI AKADEMIK
+================================================================================
 
-================================================================
-9. COURSE ALIGNMENT
-================================================================
+Teknologjitë:
+  - Apache Spark 3.x (Distributed Computing)
+  - PySpark SQL & DataFrame API
+  - Python 3.8+ (Scientific Computing)
+  - Pandas, NumPy (Data Manipulation)
+  - Matplotlib, Seaborn (Visualization)
 
-This project demonstrates mastery of concepts from:
+Konceptet:
+  - MapReduce programming model
+  - Lazy evaluation dhe query optimization
+  - Window functions për analytical queries
+  - Time series analysis methodology
+  - Financial risk management
+  - Statistical inference
 
-SESSION 1: PySpark Basics
-- DataFrame creation
-- Schema inference
-- Basic transformations
-- CSV writing
+Aplikimi:
+  - Portfolio risk assessment
+  - Trading strategy backtesting
+  - Market trend analysis
+  - Volatility forecasting
+  - Performance attribution
 
-SESSION 2: Data Loading Patterns
-- Pandas integration
-- Multiple format support
-- Type casting
-- Null handling
+================================================================================
+REFERENCAT SHKENCORE
+================================================================================
 
-SESSION 3: Advanced Analytics
-- Window functions
-- Statistical aggregations
-- Time-series analysis
-- Multi-level grouping
+[1] Zaharia, M., et al. (2016). "Apache Spark: A Unified Engine for Big Data"
+[2] Tsay, R. S. (2010). "Analysis of Financial Time Series" (3rd Edition)
+[3] Hull, J. C. (2018). "Options, Futures, and Other Derivatives" (10th Ed.)
+[4] Hastie, T., et al. (2009). "The Elements of Statistical Learning"
+[5] Dean, J., & Ghemawat, S. (2008). "MapReduce: Simplified Data Processing"
 
-BONUS: Production Best Practices
-- Cross-platform compatibility
-- Error handling
-- Comprehensive documentation
-- Deployment automation
+================================================================================
+PERFORMANCE METRICS
+================================================================================
 
-================================================================
-10. NEXT STEPS
-================================================================
+Spark Configuration:
+  - Driver Memory: 4GB
+  - Adaptive Query Execution: Enabled
+  - Partition Coalescing: Automatic
+  - Shuffle Partitions: Auto-tuned
 
-IMMEDIATE:
-[ ] Connect to server with your credentials
-[ ] Run test_server_connection.sh
-[ ] Deploy using deploy_to_server.sh
-[ ] Verify outputs on server
-[ ] Download results for presentation
+Expected Runtime:
+  - Dataset Generation: < 1 minute
+  - Analysis Execution: 2-5 minutes (depending on data size)
+  - Visualization: < 1 minute
+  - Total: ~3-7 minutes
 
-OPTIONAL ENHANCEMENTS:
-[ ] Add data visualization (matplotlib/seaborn)
-[ ] Implement customer segmentation (RFM analysis)
-[ ] Add anomaly detection
-[ ] Create predictive models (sales forecasting)
-[ ] Export to Parquet for better performance
-[ ] Add data quality checks
+Scalability:
+  - Can handle millions of rows
+  - Distributed processing ready
+  - Memory-efficient operations
+  - Optimized query plans
 
-================================================================
-FILES CREATED
-================================================================
+================================================================================
+PËRFUNDIMI
+================================================================================
 
-Python Scripts:
-✓ retail_profiler.py (8 KB) - Main analysis script
+Ky projekt demonstron zotërimin e:
 
-Shell Scripts:
-✓ deploy_to_server.sh (2 KB) - Automated deployment
-✓ connect_to_server.sh (1 KB) - Manual connection
-✓ test_server_connection.sh (2 KB) - Environment test
+✓ Big Data Technologies (Apache Spark)
+✓ Financial Analytics (Quantitative Finance)
+✓ Statistical Computing (Advanced Statistics)
+✓ Time Series Analysis (Econometrics)
+✓ Software Engineering (Clean Code, Documentation)
 
-Documentation:
-✓ README.md (5 KB) - Project documentation
-✓ SERVER_COMMANDS.txt (3 KB) - Quick reference
-✓ PROJECT_SUMMARY.txt (This file, 7 KB)
+Projekti është i përshtatshëm për:
+  ✓ Disertacione doktorale
+  ✓ Publikime shkencore
+  ✓ Prezantime akademike
+  ✓ Portfolio profesionale
+  ✓ Aplikime industriale
 
-Data:
-✓ data_kaggle/online_retail.xlsx (22.6 MB) - Dataset
+================================================================================
+FAKULTETI I SHKENCAVE KOMPJUTERIKE
+UNIVERSITETI I PRISHTINËS
+REPUBLIKA E KOSOVËS 🇽🇰
+================================================================================
 
-Outputs (from local run):
-✓ out_retail/ (9 files, 8.6 MB total)
+Të drejta autoriale © 2024
+Përdorimi akademik dhe kërkimor
 
-================================================================
-READY FOR DEPLOYMENT! 
-================================================================
-
-All scripts are tested and ready.
-Dataset downloaded and validated.
-Analysis runs successfully locally.
-Server connection scripts prepared.
-
-👉 Run: ./test_server_connection.sh
-👉 Then: ./deploy_to_server.sh
-
-================================================================
+✓✓✓ PROJEKTI I NIVELIT DOKTORAL ✓✓✓

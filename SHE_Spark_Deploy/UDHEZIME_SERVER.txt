@@ -1,0 +1,147 @@
+================================================================================
+UDHËZIME PËR KOPJIMIN E SKEDARËVE NË SERVER
+================================================================================
+
+SERVER INFO:
+Host: krenuser@185.182.158.150
+Port: 8022
+Folder: /home/krenuser/SHE_Spark_Deploy
+
+================================================================================
+SKEDARËT QË DUHEN KOPJUAR
+================================================================================
+
+1. gjenerues_simple_spark.py
+   - Gjeneruesi kryesor i të dhënave
+   - Përdor Apache Spark
+   - Madhësia: 5 KB
+
+2. README_SHQIP.txt
+   - Udhëzime të plota në shqip
+   - Shpjegon çdo gjë
+
+3. gjenerues_vizualizime.py (opsionale)
+   - Gjeneron figura shtesë
+   - Nevojitet matplotlib
+
+================================================================================
+MËNYRAT PËR TË KOPJUAR
+================================================================================
+
+MËNYRA 1: Përdor batch script-in (Windows)
+-------------------------------------------
+1. Double-click në: deploy_to_server.bat
+2. Fut password-in kur të të kërkojë
+3. Prit derisa të përfundojë
+
+MËNYRA 2: Komanda manuale (një nga një)
+-----------------------------------------
+scp -P 8022 gjenerues_simple_spark.py krenuser@185.182.158.150:/home/krenuser/SHE_Spark_Deploy/
+scp -P 8022 README_SHQIP.txt krenuser@185.182.158.150:/home/krenuser/SHE_Spark_Deploy/
+scp -P 8022 gjenerues_vizualizime.py krenuser@185.182.158.150:/home/krenuser/SHE_Spark_Deploy/
+
+MËNYRA 3: SSH pastaj kopjo (më e sigurt)
+------------------------------------------
+1. ssh -p 8022 krenuser@185.182.158.150
+2. cd /home/krenuser/SHE_Spark_Deploy
+3. Hap një terminal tjetër në Windows
+4. Ekzekuto komandën scp nga mënyra 2
+
+================================================================================
+PAS KOPJIMIT - SI TË EKZEKUTOSH NË SERVER
+================================================================================
+
+1. Lidhu me serverin:
+   ssh -p 8022 krenuser@185.182.158.150
+
+2. Shko te folderi:
+   cd /home/krenuser/SHE_Spark_Deploy
+
+3. Verifikoekzistencën e skedarëve:
+   ls -lah
+
+4. Ekzekuto Spark generator-in:
+   spark-submit --master local[*] \
+                --driver-memory 1g \
+                --executor-memory 1g \
+                gjenerues_simple_spark.py
+
+5. Prit ~120 sekonda derisa të përfundojë
+
+6. Verifikoni output-in:
+   ls -lah data_kaggle/
+   
+7. Do të shohësh 23 skedarë CSV (një për çdo asset)
+
+================================================================================
+GJENERIMI I PREZANTIMIT (NË KOMPJUTERIN TUAJ)
+================================================================================
+
+KUJDES: VBA skedari NUK duhet të kopjohet në server!
+Ai mbetet në kompjuterin tuaj.
+
+1. Hap Microsoft PowerPoint (prezantim bosh)
+
+2. Shtyp ALT + F11 për të hapur VBA Editor
+
+3. Insert → Module
+
+4. Hap skedarin: prezantimi_shqip_full.vba
+
+5. Kopjo TË GJITHË kodin
+
+6. Ngjit në module
+
+7. Shtyp F5 ose Run → Run Sub/UserForm
+
+8. Prit 30-60 sekonda
+
+9. GATI! Do të krijosh 8 slide:
+   ✓ Flamuri i Kosovës
+   ✓ Përmbledhje ekzekutive
+   ✓ 23 asetet (pie chart)
+   ✓ Arkitektura e Big Data
+   ✓ 8 modelet (flowchart)
+   ✓ Strategjia afatshkurtër
+   ✓ Strategjia afatgjatë
+   ✓ Faleminderit + flamuri
+
+================================================================================
+TROUBLESHOOTING
+================================================================================
+
+PROBLEM: "Permission denied"
+ZGJIDHJA: Verifikoni që keni qasje në server me kredencialet e sakta
+
+PROBLEM: "Connection refused"
+ZGJIDHJA: Verifikoni që porti 8022 është i hapur
+
+PROBLEM: "spark-submit: command not found"
+ZGJIDHJA: Instaloni Apache Spark në server ose aktivizoni environment
+
+PROBLEM: "ModuleNotFoundError: No module named 'pyspark'"
+ZGJIDHJA: pip install pyspark
+
+PROBLEM: "VBA Runtime error"
+ZGJIDHJA: Sigurohuni që macros janë të aktivizuar në PowerPoint
+         File → Options → Trust Center → Macro Settings → Enable all macros
+
+================================================================================
+KONTAKTI
+================================================================================
+
+Nëse keni probleme:
+1. Lexoni README_SHQIP.txt (skedari më i detajuar)
+2. Lexoni ZGJIDHJA_FINALE.txt (përmbledhje)
+3. Kontaktoni administratorin e serverit
+4. Verifikoni që të gjithë programet janë të instaluara:
+   - Apache Spark 3.5.0+
+   - Python 3.8+
+   - Microsoft PowerPoint (për prezantimin)
+
+================================================================================
+STATUS: ✅ UDHËZIME TË PLOTA
+DATA: 23 Tetor 2025
+UNIVERSITETI: Universiteti i Prishtinës
+SHTETI: Republika e Kosovës (XK)
+================================================================================

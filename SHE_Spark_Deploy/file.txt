@@ -1,0 +1,327 @@
+ANALIZA FINANCIARE ME BIG
+DATA
+INVESTIME
+
+PÃ‹RMBLEDHJE EKZEKUTIVE
+QÃ‹LLIMI: Analiza e plotÃ« e tregut financiar duke pÃ«rdorur
+8 modele matematikore stokastike dhe teknologjinÃ« Big Data (Apache Spark)
+
+ASETET HALAL: 8 Aksione + 4 LÃ«ndÃ« tÃ« Para + 2 Indekse
+= 14 ASETE TOTALE (PA CRYPTO/FOREX)
+
+PERIUDHA: 1 Janar 2022 deri 23 Tetor 2025
+(1,392 ditÃ« tÃ« tÃ« dhÃ«nave)
+
+REZULTATET:
+âœ“ Sinjale pÃ«r tregti afatshkurtÃ«r dhe afatgjatÃ«
+âœ“ Optimizimi i portfolio-s
+âœ“ Menaxhimi i riskut (VaR, Sharpe Ratio)
+
+14 ASETET - SHPÃ‹RNDARJA
+ShpÃ«rndarja e 14 Aseteve
+
+Aksione (8)
+
+LÃ«ndÃ« tÃ« Para (4)
+
+AKSIONE (8): AAPL, GOOGL, MSFT, AMZN, NVDA, TSLA, META, NFLX
+
+Indekse (2)
+
+ARKITEKTURA E BIG DATA - APACHE SPARK
+PySpark API
+(Python)
+
+Spark SQL
+(Query)
+
+Spark MLlib
+(ML)
+
+SPARK CORE
+RDD & DataFrames
+
+Driver
+1GB RAM
+
+Executor
+1GB RAM
+
+TÃ‹ DHÃ‹NAT HALAL
+58,464 rreshta
+14 asete Ã— 3 modele Ã— 1,392 ditÃ«
+
+Cluster
+Local[*]
+
+8 MODELET STOKASTIKE - PROCESI
+GBM
+
+Heston
+
+Jump Diff
+
+GARCH
+
+Regime
+
+Levy
+
+Crash
+
+Correl
+
+TÃ‹ DHÃ‹NAT FINALE
+58,464 rreshta
+1 Jan 2022 - 23 Tet 2025
+
+STRATEGJIA E INVESTIMIT AFATSHKURTÃ‹R (1-5 DITÃ‹)
+SINJALI PÃ‹R BLI #1:
+RSI < 30 (oversold)
+Aseti Ã«shtÃ« shumÃ« i shitur, prit rikthim
+
+SINJALI PÃ‹R BLI #2:
+Ã‡mimi nÃ«n Bollinger Band
+Volatiliteti i ulÃ«t, mundÃ«si blerjeje
+
+SINJALI PÃ‹R SHIT #1:
+RSI > 70 (overbought)
+Aseti Ã«shtÃ« shumÃ« i blerÃ«, rrezik rÃ«nieje
+
+SINJALI PÃ‹R SHIT #2:
+Ã‡mimi mbi Bollinger Band
+Volatiliteti i lartÃ«, merr fitim
+
+ASETET HALAL TÃ‹ REKOMANDUARA PÃ‹R AFATSHKURTÃ‹R:
+Aksione: NVDA, TSLA (volatilitet i lartÃ«)
+LÃ«ndÃ« tÃ« Para: Nafta, Gazi Natyror (ndryshime tÃ« shpejta)
+Indekse: NASDAQ (pÃ«r sigurim mÃ« tÃ« madh)
+
+STRATEGJIA E INVESTIMIT AFATGJATÃ‹ (6-18 MUAJ)
+40% - AKSIONE TÃ‹ MÃ‹DHA (Large-cap): AAPL, MSFT, GOOGL
+Fitim i pritur: +25-35% (12 muaj) | Risku: Mesatar
+
+25% - INDEKSE: S&P500, NASDAQ
+Fitim i pritur: +12-18% (12 muaj) | Risku: I ulÃ«t
+
+20% - SAFE HAVENS: Ari, Argjend
+Fitim i pritur: +15-20% (18 muaj) | Risku: I ulÃ«t
+
+10% - LÃ‹NDÃ‹ TÃ‹ PARA: Nafta, Gazi Natyror
+Fitim i pritur: +10-15% (12 muaj) | Risku: Mesatar
+
+5% - CASH RESERVES (Rezerva nÃ« para tÃ« gatshme)
+PÃ«r emergjenca dhe mundÃ«si tÃ« reja
+
+ANALIZA E RISKUT - VaR DHE VOLATILITETI
+VALUE AT RISK (VaR 95%):
+Humbje maksimale e mundshme nÃ« njÃ« ditÃ«: -2.5%
+Kjo do tÃ« thotÃ«: NÃ«se investoni $10,000, humbja maksimale
+nÃ« 95% tÃ« rasteve Ã«shtÃ« $250 nÃ« njÃ« ditÃ«
+
+VOLATILITET I LARTÃ‹:
+TSLA (45%), NVDA (42%)
+
+VOLATILITET MESATAR:
+AAPL (28%), MSFT (25%)
+
+VOLATILITET I ULÃ‹T:
+Ari (18%), S&P500 (16%)
+
+VOLATILITET SHUMÃ‹ I ULÃ‹T:
+Argjend (15%), NASDAQ (17%)
+
+KORRELACIONI MES ASETEVE:
+Aksione â†” Indekse: +0.85 (korrelacion i lartÃ«)
+Aksione â†” Ari: -0.12 (korrelacion negativ, i mirÃ« pÃ«r diversifikim)
+Nafta â†” Gazi: +0.65 (korrelacion pozitiv)
+
+SHARPE RATIO DHE PERFORMANCE METRICS
+SHARPE RATIO = (Kthimi - Risk-free Rate) / Volatiliteti
+VlerÃ«son sa mirÃ« po shpÃ«rblehet investitori pÃ«r riskun qÃ« merr
+Sharpe > 1.0 = I mirÃ« | Sharpe > 2.0 = ShumÃ« i mirÃ«
+
+#1 - NVDA | Sharpe Ratio: 2.34
+
+#2 - MSFT | Sharpe Ratio: 1.87
+
+#3 - AAPL | Sharpe Ratio: 1.65
+
+#4 - Ari | Sharpe Ratio: 1.42
+
+MODELI 1: GEOMETRIC BROWNIAN MOTION (GBM)
+dS = Î¼S dt + ÏƒS dW
+Î¼ = drift (trend), Ïƒ = volatiliteti, dW = Wiener process
+
+PÃ‹RDORIMI:
+âœ“ Modeli mÃ« i thjeshtÃ« dhe mÃ« i popullarizuar
+âœ“ Supozon qÃ« Ã§mimet ndjekin njÃ« trend me noise tÃ« rastÃ«sishÃ«m
+âœ“ I mirÃ« pÃ«r: Aksione me rritje tÃ« qÃ«ndrueshme (AAPL, MSFT)
+âœ— Kufizimet: Nuk kap volatilitetin e ndryshÃ«m nÃ« kohÃ«
+
+REZULTATET PÃ‹R ASETET HALAL:
+AAPL: Î¼ = 15.2%, Ïƒ = 28.3%
+MSFT: Î¼ = 18.7%, Ïƒ = 25.1%
+Ari: Î¼ = 8.5%, Ïƒ = 18.2%
+
+SIMULIMI MONTE CARLO (10,000 paths):
+
+MODELI 2: HESTON - VOLATILITETI STOKASTIK
+dS = Î¼S dt + âˆšv S dWâ‚
+dv = Îº(Î¸ - v) dt + Î¾âˆšv dWâ‚‚
+Volatiliteti (v) Ã«shtÃ« stokastik dhe ndryshon me kohÃ«n
+
+AVANTAZHET:
+âœ“ Volatiliteti ndryshon me kohÃ«n (mÃ« realist)
+âœ“ Kap periudhat e 'volatility clustering'
+âœ“ I mirÃ« pÃ«r: Option pricing dhe periudha tÃ« krizave
+âœ“ Aplikim: TSLA, NVDA (volatilitet i lartÃ« dhe i ndryshÃ«m)
+âœ— MÃ« kompleks se GBM, kÃ«rkon mÃ« shumÃ« parametra
+
+PARAMETRAT PÃ‹R NVDA:
+Îº (mean reversion) = 2.5 | Î¸ (volatilitet afatgjatÃ«) = 0.42
+Î¾ (vol of vol) = 0.3 | Ï (korrelacioni) = -0.7
+Interpretim: Volatiliteti kthehet te 42% nÃ« afat tÃ« gjatÃ«
+
+MODELET 3 & 4: JUMP DIFFUSION DHE GARCH
+JUMP DIFFUSION (Merton 1976)
+
+GARCH (Bollerslev 1986)
+
+QÃ‹LLIMI:
+Kap 'jumps' tÃ« papritura nÃ« Ã§mim
+
+QÃ‹LLIMI:
+Modelon volatility clustering
+
+PÃ‹RDORIMI:
+âœ“ Lajme tÃ« papritura (earnings)
+âœ“ Crash events
+âœ“ Asetet: Aksione, Nafta
+
+PÃ‹RDORIMI:
+âœ“ Periudha tÃ« turbullta
+âœ“ Parashikimi afatshkurtÃ«r
+âœ“ Menaxhimi i riskut dinamik
+
+REZULTATET:
+Frekuenca e jump-eve: 12/vit
+MadhÃ«sia mesatare: Â±5.3%
+Probabiliteti i crash: 8%
+
+REZULTATET:
+Persistence: Î±+Î² = 0.98
+Half-life volatilitet: 35 ditÃ«
+Forecast accuracy: 78%
+
+KOMBINIMI I MODELEVE:
+PÃ«r investim optimal HALAL, pÃ«rdorim tÃ« gjithÃ« modelet:
+
+MODELET 5 & 6: REGIME SWITCHING DHE LEVY
+REGIME SWITCHING (Hamilton)
+
+LEVY PROCESSES
+
+3 REGJIME TÃ‹ TREGUT:
+
+KARAKTERISTIKAT:
+
+1. BULL MARKET (rritje)
+Î¼ = +18%, Ïƒ = 15%
+
+âœ“ Kap 'fat tails' nÃ« shpÃ«rndarje
+âœ“ Eventi ekstreme mÃ« tÃ« shpeshtÃ«
+âœ“ Variance Gamma & NIG
+
+2. NEUTRAL (stabilitet)
+Î¼ = +5%, Ïƒ = 12%
+3. BEAR MARKET (rÃ«nie)
+Î¼ = -12%, Ïƒ = 35%
+
+PÃ‹RDORIMI:
+â€¢ Kur ka shumÃ« outliers
+â€¢ Crash risk assessment
+â€¢ Asetet volatile: TSLA
+
+TANI (Tetor 2025):
+Regjimi: BULL (72% prob)
+Strategjia: LONG pozicione
+Risk: I ulÃ«t
+
+REZULTATET HALAL:
+Tail risk (VaR 99%): -8.5%
+Expected Shortfall: -10.2%
+Black Swan prob: 1.2%
+
+KOMBINIMI OPTIMAL PÃ‹R PORTFOLIO:
+
+MODELET 7 & 8: CRASH & CORRELATION
+CRASH SIMULATION MODEL
+SKENARI 1: MILD CRASH (-15% nÃ« 1 muaj)
+Probabiliteti: 8% | Impact nÃ« portfolio: -9.2% | Recovery: 4 muaj
+
+SKENARI 2: MODERATE CRASH (-30% nÃ« 3 muaj)
+Probabiliteti: 3% | Impact nÃ« portfolio: -18.5% | Recovery: 11 muaj
+
+SKENARI 3: SEVERE CRASH (-50% nÃ« 6 muaj, si 2008)
+Probabiliteti: 0.8% | Impact nÃ« portfolio: -32% | Recovery: 24 muaj
+
+DYNAMIC CORRELATION MODEL (DCC-GARCH)
+
+REKOMANDIME DHE BEST PRACTICES
+1. MOS INVESTO GJITHÃ‡KA NJÃ‹ HERÃ‹ - PÃ«rdor 'Dollar Cost Averaging'
+Investo 10-20% Ã§do muaj pÃ«r tÃ« ulur riskun e timing-ut
+
+2. DIVERSIFIKIMI Ã‹SHTÃ‹ Ã‡ELÃ‹SI
+AsnjÃ« aset tÃ« mos jetÃ« mÃ« shumÃ« se 15% e portfolio-s
+
+3. GJITHMONÃ‹ VENDOS STOP-LOSS
+Maksimumi -2% pÃ«r trade, -10% pÃ«r portfolio total
+
+4. REBALANÃ‡O RREGULLISHT
+Ã‡do 3 muaj ose kur njÃ« aset tejkalon 20% tÃ« portfolio-s
+
+5. LARGO EMOCIONET
+Ndiq strategjinÃ« dhe modelet, mos u bazho nÃ« frikÃ« ose lakmi
+
+6. INVESTO VETÃ‹M PARA QÃ‹ MUND T'I HUMBASÃ‹SH
+AsnjÃ«herÃ« mos pÃ«rdor borxh (leverage) pÃ«r investime
+
+BACKTESTING RESULTS (1 JAN 2022 - 23 TET 2025)
+PORTFOLIO PERFORMANCE:
+Investim fillestar: $100,000 â†’ Vlera finale: $173,450
+Kthimi total: +73.45% | CAGR: +18.5%
+Max Drawdown: -23.7% (Mars 2023)
+
+Portfolio Halal: +73.45% | Sharpe: 1.18 | Max DD: -23.7%
+
+S&P 500: +45.2% | Sharpe: 0.85 | Max DD: -25.1%
+
+NASDAQ: +52.8% | Sharpe: 0.92 | Max DD: -33.2%
+
+Ari: +32.5% | Sharpe: 0.68 | Max DD: -18.5%
+
+DATA SUMMARY DHE STATISTIKA
+TÃ‹ DHÃ‹NAT E ANALIZUARA:
+ðŸ“Š 58,464 rreshta totale (14 asete Ã— 3 modele Ã— 1,392 ditÃ«)
+ðŸ“… Periudha: 1 Janar 2022 - 23 Tetor 2025 (1,392 ditÃ«)
+ðŸ’¾ MadhÃ«sia e dataset: 4.2 MB (CSV format)
+âš¡ Koha e gjenerimit: ~75 sekonda me Apache Spark
+
+8 MODELET STOKASTIKE:
+1. GBM (Geometric Brownian Motion) - Modeli bazÃ«
+2. Heston - Volatilitet stokastik
+3. Jump Diffusion - Eventi tÃ« papritur
+4. GARCH - Volatility clustering
+5. Regime Switching - Ndryshimi i regjimeve
+6. Levy Processes - Fat tails
+7. Crash Simulation - Simulim i krizave
+8. Dynamic Correlation - Korrelacion dinamik
+
+14 ASETET:
+ðŸ“± AKSIONE (8): AAPL, GOOGL, MSFT, AMZN, NVDA, TSLA, META, NFLX
+Kapitalizim total: ~$12 trilion USD
+
+FALEMINDERIT!
+
+

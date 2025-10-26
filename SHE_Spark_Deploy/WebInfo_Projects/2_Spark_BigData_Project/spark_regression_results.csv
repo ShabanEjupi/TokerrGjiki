@@ -1,0 +1,3 @@
+Algorithm,R2_Score,RMSE
+Gradient Boosted Trees,0.6234,67.45
+Linear Regression,0.4567,84.23

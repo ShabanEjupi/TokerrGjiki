@@ -1,0 +1,8 @@
+Category,Algorithm,Primary_Metric,Secondary_Metric
+Classification,Decision Tree,0.5234,0.5456
+Classification,Random Forest,0.5678,0.5923
+Classification,Logistic Regression,0.5112,0.5234
+Classification,Linear SVM,0.4989,
+Regression,Gradient Boosted Trees,0.6234,67.45
+Regression,Linear Regression,0.4567,84.23
+Clustering,K-Means,,

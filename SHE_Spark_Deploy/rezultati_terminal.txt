@@ -1,0 +1,26 @@
+PS C:\Users\Administrator\TokerrGjiki> ssh -p 8022 krenuser@185.182.158.150 "rm -rf ~/SHE_Spark_Deploy"                                                                                                   
+krenuser@185.182.158.150's password:                                                                 
+Permission denied, please try again.                                                                 
+krenuser@185.182.158.150's password: 
+PS C:\Users\Administrator\TokerrGjiki> ssh -p 8022 krenuser@185.182.158.150 "ls -lh ~/webinfo_projects/; ls ~/webinfo_projects/1_bagging_project/*; ls ~/webinfo_projects/2_spark_bigdata_project/*"
+krenuser@185.182.158.150's password: 
+total 8.0K
+drwxrwxr-x 2 krenuser krenuser 4.0K Oct 26 21:43 1_bagging_project
+drwxrwxr-x 2 krenuser krenuser 4.0K Oct 26 21:43 2_spark_bigdata_project
+/home/krenuser/webinfo_projects/1_bagging_project/BAGGING në Web Information.pptx
+/home/krenuser/webinfo_projects/1_bagging_project/asset_performance_metrics.csv
+/home/krenuser/webinfo_projects/1_bagging_project/bagging_analysis.py
+/home/krenuser/webinfo_projects/1_bagging_project/bagging_predictions.csv
+/home/krenuser/webinfo_projects/1_bagging_project/bagging_results_summary.csv
+/home/krenuser/webinfo_projects/1_bagging_project/ensemble_model_comparison.csv
+/home/krenuser/webinfo_projects/1_bagging_project/feature_importance.csv
+/home/krenuser/webinfo_projects/1_bagging_project/real_stock_prices_14_assets.csv
+/home/krenuser/webinfo_projects/2_spark_bigdata_project/SPARK BIG DATA ANALYSIS.pptx
+/home/krenuser/webinfo_projects/2_spark_bigdata_project/spark_bigdata_analysis.py
+/home/krenuser/webinfo_projects/2_spark_bigdata_project/spark_classification_results.csv
+/home/krenuser/webinfo_projects/2_spark_bigdata_project/spark_clustering_results.csv
+/home/krenuser/webinfo_projects/2_spark_bigdata_project/spark_feature_statistics.csv
+/home/krenuser/webinfo_projects/2_spark_bigdata_project/spark_model_comparison.csv
+/home/krenuser/webinfo_projects/2_spark_bigdata_project/spark_raw_prices_14_assets.csv
+/home/krenuser/webinfo_projects/2_spark_bigdata_project/spark_regression_results.csv
+/home/krenuser/webinfo_projects/2_spark_bigdata_project/spark_sample_predictions.csv

@@ -1,0 +1,5 @@
+Algorithm,Accuracy,AUC_ROC
+Decision Tree,0.5234,0.5456
+Random Forest,0.5678,0.5923
+Logistic Regression,0.5112,0.5234
+Linear SVM,0.4989,

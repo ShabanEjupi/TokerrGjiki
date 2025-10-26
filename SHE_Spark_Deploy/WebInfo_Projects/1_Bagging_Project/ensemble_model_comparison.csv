@@ -1,0 +1,6 @@
+Model,Task,Score,Metric
+Bagging Classifier,Classification,0.4945054945054945,Accuracy
+Random Forest,Classification,0.489010989010989,Accuracy
+Single Decision Tree,Classification,0.47802197802197804,Accuracy
+Bagging Regressor,Regression,-4.921836243031007,R²
+Single Tree Regressor,Regression,-5.227379513093119,R²

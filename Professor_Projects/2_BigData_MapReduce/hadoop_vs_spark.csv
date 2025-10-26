@@ -1,0 +1,9 @@
+Feature,Hadoop MapReduce,Apache Spark
+Processing Model,Batch processing,Batch + Streaming
+Speed,Slower (disk I/O),Faster (in-memory)
+Data Storage,HDFS,"HDFS, S3, Cassandra"
+Fault Tolerance,Replication,RDD lineage
+Ease of Use,Complex (Java),"Easier (Python, Scala)"
+Real-Time Processing,Not suitable,Yes (Spark Streaming)
+Iterative Processing,Slow,Fast (100x)
+Language Support,"Java, Python (limited)","Python, Scala, Java, R, SQL"

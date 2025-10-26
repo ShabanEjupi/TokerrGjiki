@@ -1,0 +1,6 @@
+Pattern,Description,Examples
+Counting & Summarizing,Count occurrences or calculate statistics,"Word Count, Log Analysis, User Activity Tracking"
+Filtering & Searching,Filter data based on criteria,"Error Log Filtering, Data Validation, Pattern Matching"
+Sorting & Ranking,Order data by specific fields,"Top-K Problems, Leaderboards, Search Results"
+Joining & Merging,Combine data from multiple sources,"Database Joins, Data Integration, Entity Resolution"
+Grouping & Aggregation,Group data and compute aggregates,"GROUP BY operations, Sales by Region, Analytics"

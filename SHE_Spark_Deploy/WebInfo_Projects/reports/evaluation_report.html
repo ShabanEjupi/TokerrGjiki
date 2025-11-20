@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ML Model Evaluation Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background: #3498db;
+            color: white;
+            font-weight: bold;
+        }
+        tr:hover {
+            background: #f5f5f5;
+        }
+        .best {
+            background: #2ecc71 !important;
+            color: white;
+            font-weight: bold;
+        }
+        .metric {
+            font-weight: bold;
+        }
+        img {
+            max-width: 100%;
+            margin: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .info-box {
+            background: #e8f4f8;
+            padding: 20px;
+            border-left: 4px solid #3498db;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 Machine Learning Model Evaluation Report</h1>
+        <p><strong>Generated:</strong> 2025-11-17 18:43:41</p>
+        
+        <div class="info-box">
+            <h3>📊 Models Evaluated</h3>
+            <ul>
+                <li><strong>Random Forest:</strong> Ensemble of decision trees</li>
+                <li><strong>Gradient Boosting:</strong> Sequential boosting algorithm</li>
+                <li><strong>Logistic Regression:</strong> Linear classification model</li>
+                <li><strong>SVM:</strong> Support Vector Machine with RBF kernel</li>
+            </ul>
+        </div>
+        
+        <h2>📈 Performance Metrics Comparison</h2>
+        <table>
+            <tr>
+                <th>Model</th>
+                <th>Accuracy</th>
+                <th>Precision</th>
+                <th>Recall</th>
+                <th>F1-Score</th>
+                <th>ROC-AUC</th>
+            </tr>
+
+            <tr>
+                <td class="metric">Random Forest</td>
+                <td >0.5954</td>
+                <td>0.6059</td>
+                <td>0.6239</td>
+                <td >0.6148</td>
+                <td >0.6280</td>
+            </tr>
+
+            <tr>
+                <td class="metric">Gradient Boosting</td>
+                <td >0.5906</td>
+                <td>0.6011</td>
+                <td>0.6210</td>
+                <td >0.6109</td>
+                <td >0.6196</td>
+            </tr>
+
+            <tr>
+                <td class="metric">Logistic Regression</td>
+                <td >0.5969</td>
+                <td>0.5997</td>
+                <td>0.6651</td>
+                <td class="best">0.6307</td>
+                <td class="best">0.6295</td>
+            </tr>
+
+            <tr>
+                <td class="metric">SVM</td>
+                <td class="best">0.5977</td>
+                <td>0.6032</td>
+                <td>0.6506</td>
+                <td >0.6260</td>
+                <td >0.6221</td>
+            </tr>
+
+        </table>
+        
+        <h2>🏆 Best Models</h2>
+        <ul>
+            <li><strong>Best Accuracy:</strong> SVM (0.5977)</li>
+            <li><strong>Best F1-Score:</strong> Logistic Regression (0.6307)</li>
+            <li><strong>Best ROC-AUC:</strong> Logistic Regression (0.6295)</li>
+        </ul>
+        
+        <h2>📊 Visualizations</h2>
+        
+        <h3>Confusion Matrices</h3>
+        <img src="confusion_matrices.png" alt="Confusion Matrices">
+        
+        <h3>ROC Curves</h3>
+        <img src="roc_curves.png" alt="ROC Curves">
+        
+        <h3>Metrics Comparison</h3>
+        <img src="metrics_comparison.png" alt="Metrics Comparison">
+        
+        <h3>Feature Importance</h3>
+        <img src="feature_importance.png" alt="Feature Importance">
+        
+        <h3>Cross-Validation Results</h3>
+        <img src="cross_validation.png" alt="Cross Validation">
+        
+    </div>
+</body>
+</html>

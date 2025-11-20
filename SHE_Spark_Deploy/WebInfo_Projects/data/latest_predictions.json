@@ -1,0 +1,296 @@
+[
+    {
+        "prediction": 0,
+        "direction": "DOWN",
+        "confidence": 0.3975558249342668,
+        "individual_predictions": {
+            "random_forest": 0,
+            "gradient_boosting": 0,
+            "logistic_regression": 0,
+            "svm": 0
+        },
+        "individual_probabilities": {
+            "random_forest": 0.3838631380596366,
+            "gradient_boosting": 0.3809523007948965,
+            "logistic_regression": 0.4352077058910716,
+            "svm": 0.39020015499146254
+        },
+        "market_regime": "Bull Market",
+        "asset": "AAPL",
+        "timestamp": "2025-11-17 16:37:13.636844",
+        "current_price": 3805.6726186765313
+    },
+    {
+        "prediction": 1,
+        "direction": "UP",
+        "confidence": 0.6448378016430891,
+        "individual_predictions": {
+            "random_forest": 1,
+            "gradient_boosting": 1,
+            "logistic_regression": 1,
+            "svm": 1
+        },
+        "individual_probabilities": {
+            "random_forest": 0.6579306302748421,
+            "gradient_boosting": 0.6557884287160413,
+            "logistic_regression": 0.6141791976745006,
+            "svm": 0.6514529499069728
+        },
+        "market_regime": "Bull Market",
+        "asset": "GOOGL",
+        "timestamp": "2025-11-17 16:37:13.657863",
+        "current_price": 1436.3960181614536
+    },
+    {
+        "prediction": 1,
+        "direction": "UP",
+        "confidence": 0.6000148798544698,
+        "individual_predictions": {
+            "random_forest": 1,
+            "gradient_boosting": 1,
+            "logistic_regression": 1,
+            "svm": 1
+        },
+        "individual_probabilities": {
+            "random_forest": 0.6183788173808176,
+            "gradient_boosting": 0.741392879778302,
+            "logistic_regression": 0.5402878222587593,
+            "svm": 0.5
+        },
+        "market_regime": "High Volatility",
+        "asset": "MSFT",
+        "timestamp": "2025-11-17 16:37:13.671003",
+        "current_price": 15278.848988744128
+    },
+    {
+        "prediction": 0,
+        "direction": "DOWN",
+        "confidence": 0.526210672300627,
+        "individual_predictions": {
+            "random_forest": 0,
+            "gradient_boosting": 1,
+            "logistic_regression": 0,
+            "svm": 1
+        },
+        "individual_probabilities": {
+            "random_forest": 0.4847402742131166,
+            "gradient_boosting": 0.5028037277499918,
+            "logistic_regression": 0.4566443439910924,
+            "svm": 0.6606543432483071
+        },
+        "market_regime": "Bear Market",
+        "asset": "AMZN",
+        "timestamp": "2025-11-17 16:37:13.675723",
+        "current_price": 36131.92244985971
+    },
+    {
+        "prediction": 1,
+        "direction": "UP",
+        "confidence": 0.7687697218799225,
+        "individual_predictions": {
+            "random_forest": 1,
+            "gradient_boosting": 1,
+            "logistic_regression": 1,
+            "svm": 1
+        },
+        "individual_probabilities": {
+            "random_forest": 0.7108991432951427,
+            "gradient_boosting": 0.852936186529966,
+            "logistic_regression": 0.865312560188666,
+            "svm": 0.6459309975059156
+        },
+        "market_regime": "Bull Market",
+        "asset": "NVDA",
+        "timestamp": "2025-11-17 16:37:13.694063",
+        "current_price": 727.2064934551577
+    },
+    {
+        "prediction": 0,
+        "direction": "DOWN",
+        "confidence": 0.3561271286884906,
+        "individual_predictions": {
+            "random_forest": 0,
+            "gradient_boosting": 0,
+            "logistic_regression": 0,
+            "svm": 0
+        },
+        "individual_probabilities": {
+            "random_forest": 0.3001283377465415,
+            "gradient_boosting": 0.3011261447618537,
+            "logistic_regression": 0.37315484558603373,
+            "svm": 0.4500991866595335
+        },
+        "market_regime": "Stable Market",
+        "asset": "TSLA",
+        "timestamp": "2025-11-17 16:37:13.704699",
+        "current_price": 445.275195336428
+    },
+    {
+        "prediction": 0,
+        "direction": "DOWN",
+        "confidence": 0.49157314697633203,
+        "individual_predictions": {
+            "random_forest": 0,
+            "gradient_boosting": 1,
+            "logistic_regression": 0,
+            "svm": 0
+        },
+        "individual_probabilities": {
+            "random_forest": 0.47225107885295214,
+            "gradient_boosting": 0.6255584218948952,
+            "logistic_regression": 0.45351725307512913,
+            "svm": 0.4149658340823517
+        },
+        "market_regime": "Stable Market",
+        "asset": "META",
+        "timestamp": "2025-11-17 16:37:13.716514",
+        "current_price": 762.9993331000634
+    },
+    {
+        "prediction": 0,
+        "direction": "DOWN",
+        "confidence": 0.4104716262996494,
+        "individual_predictions": {
+            "random_forest": 0,
+            "gradient_boosting": 0,
+            "logistic_regression": 0,
+            "svm": 0
+        },
+        "individual_probabilities": {
+            "random_forest": 0.4068783854641185,
+            "gradient_boosting": 0.3934344819116185,
+            "logistic_regression": 0.4441934699290829,
+            "svm": 0.3973801678937779
+        },
+        "market_regime": "Stable Market",
+        "asset": "NFLX",
+        "timestamp": "2025-11-17 16:37:13.728752",
+        "current_price": 311.8602863043706
+    },
+    {
+        "prediction": 0,
+        "direction": "DOWN",
+        "confidence": 0.4586026158591855,
+        "individual_predictions": {
+            "random_forest": 0,
+            "gradient_boosting": 0,
+            "logistic_regression": 0,
+            "svm": 0
+        },
+        "individual_probabilities": {
+            "random_forest": 0.43900336282324154,
+            "gradient_boosting": 0.46065408863244056,
+            "logistic_regression": 0.48968789616871167,
+            "svm": 0.44506511581234826
+        },
+        "market_regime": "Stable Market",
+        "asset": "GC=F",
+        "timestamp": "2025-11-17 16:37:13.739763",
+        "current_price": 1341.4279683850302
+    },
+    {
+        "prediction": 0,
+        "direction": "DOWN",
+        "confidence": 0.3745376725175802,
+        "individual_predictions": {
+            "random_forest": 0,
+            "gradient_boosting": 0,
+            "logistic_regression": 0,
+            "svm": 0
+        },
+        "individual_probabilities": {
+            "random_forest": 0.3866768689053172,
+            "gradient_boosting": 0.3940455633665151,
+            "logistic_regression": 0.3556912523244351,
+            "svm": 0.3617370054740535
+        },
+        "market_regime": "Stable Market",
+        "asset": "SI=F",
+        "timestamp": "2025-11-17 16:37:13.751927",
+        "current_price": 18.826294420346304
+    },
+    {
+        "prediction": 1,
+        "direction": "UP",
+        "confidence": 0.5135466503080652,
+        "individual_predictions": {
+            "random_forest": 1,
+            "gradient_boosting": 0,
+            "logistic_regression": 1,
+            "svm": 1
+        },
+        "individual_probabilities": {
+            "random_forest": 0.5041511627750356,
+            "gradient_boosting": 0.46011099931059,
+            "logistic_regression": 0.5051966364054021,
+            "svm": 0.584727802741233
+        },
+        "market_regime": "Stable Market",
+        "asset": "CL=F",
+        "timestamp": "2025-11-17 16:37:13.764127",
+        "current_price": 15.957843814598096
+    },
+    {
+        "prediction": 1,
+        "direction": "UP",
+        "confidence": 0.6209627620778637,
+        "individual_predictions": {
+            "random_forest": 1,
+            "gradient_boosting": 1,
+            "logistic_regression": 1,
+            "svm": 1
+        },
+        "individual_probabilities": {
+            "random_forest": 0.6462876176980704,
+            "gradient_boosting": 0.5436523603894533,
+            "logistic_regression": 0.635869938949082,
+            "svm": 0.6580411312748493
+        },
+        "market_regime": "Bull Market",
+        "asset": "NG=F",
+        "timestamp": "2025-11-17 16:37:13.774945",
+        "current_price": 1.9510108327940787
+    },
+    {
+        "prediction": 1,
+        "direction": "UP",
+        "confidence": 0.5836780455890994,
+        "individual_predictions": {
+            "random_forest": 1,
+            "gradient_boosting": 1,
+            "logistic_regression": 1,
+            "svm": 1
+        },
+        "individual_probabilities": {
+            "random_forest": 0.5881647607721256,
+            "gradient_boosting": 0.578808436486092,
+            "logistic_regression": 0.5504271933697182,
+            "svm": 0.6173117917284616
+        },
+        "market_regime": "High Volatility",
+        "asset": "^GSPC",
+        "timestamp": "2025-11-17 16:37:13.786654",
+        "current_price": 10728.792576286156
+    },
+    {
+        "prediction": 1,
+        "direction": "UP",
+        "confidence": 0.6176978236674517,
+        "individual_predictions": {
+            "random_forest": 1,
+            "gradient_boosting": 1,
+            "logistic_regression": 1,
+            "svm": 1
+        },
+        "individual_probabilities": {
+            "random_forest": 0.6175082332597142,
+            "gradient_boosting": 0.6741002220358993,
+            "logistic_regression": 0.6539084207923481,
+            "svm": 0.5252744185818458
+        },
+        "market_regime": "Bear Market",
+        "asset": "^IXIC",
+        "timestamp": "2025-11-17 16:37:13.798248",
+        "current_price": 69746.25294193221
+    }
+]

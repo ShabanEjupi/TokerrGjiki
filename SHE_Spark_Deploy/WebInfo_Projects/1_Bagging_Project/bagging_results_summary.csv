@@ -1,5 +1,0 @@
-Model,Metric,Score,OOB_Score
-Bagging Classification,Accuracy,0.4945054945054945,0.5324137931034483
-Single Tree Classification,Accuracy,0.47802197802197804,
-Bagging Regression,R² Score,-4.921836243031007,0.6340323027675598
-Single Tree Regression,R² Score,-5.227379513093119,

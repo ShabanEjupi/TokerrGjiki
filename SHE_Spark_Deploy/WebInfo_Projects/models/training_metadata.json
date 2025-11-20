@@ -1,0 +1,68 @@
+{
+    "training_date": "2025-11-17T18:38:16.714477",
+    "training_time_seconds": 25.152439,
+    "assets": [
+        "AAPL",
+        "GOOGL",
+        "MSFT",
+        "AMZN",
+        "NVDA",
+        "TSLA",
+        "META",
+        "NFLX",
+        "GC=F",
+        "SI=F",
+        "CL=F",
+        "NG=F",
+        "^GSPC",
+        "^IXIC"
+    ],
+    "features": [
+        "return",
+        "ma_5",
+        "ma_14",
+        "ma_20",
+        "ma_50",
+        "volatility_14",
+        "volatility_20",
+        "momentum_7",
+        "momentum_14",
+        "rsi",
+        "bb_upper",
+        "bb_middle",
+        "bb_lower",
+        "price_to_ma5",
+        "price_to_ma20"
+    ],
+    "models": {
+        "Random Forest": {
+            "accuracy": 0.5954045954045954,
+            "precision": 0.6059375,
+            "recall": 0.6238738738738738,
+            "f1_score": 0.6147748890298034,
+            "roc_auc": 0.6279749136891994
+        },
+        "Gradient Boosting": {
+            "accuracy": 0.5905760905760906,
+            "precision": 0.6010588601681719,
+            "recall": 0.620978120978121,
+            "f1_score": 0.6108561481247032,
+            "roc_auc": 0.6195891987817455
+        },
+        "Logistic Regression": {
+            "accuracy": 0.596903096903097,
+            "precision": 0.5996518711923412,
+            "recall": 0.665057915057915,
+            "f1_score": 0.6306636155606408,
+            "roc_auc": 0.6294544322494633
+        },
+        "SVM": {
+            "accuracy": 0.5977355977355977,
+            "precision": 0.6032219570405728,
+            "recall": 0.6505791505791506,
+            "f1_score": 0.6260061919504644,
+            "roc_auc": 0.622098140731681
+        }
+    },
+    "best_model": "Logistic Regression"
+}
